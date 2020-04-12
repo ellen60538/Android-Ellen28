@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:textSize="28sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select"
+            android:onClick="test1"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/datePicker"
+            android:layout_alignTop="@+id/datePicker"
+            android:layout_alignBottom="@+id/datePicker"
+            android:textSize="30sp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="28sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select"
+            android:onClick="test2"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/timePicker"
+            android:layout_alignTop="@+id/timePicker"
+            android:layout_alignBottom="@+id/timePicker"
+            android:textSize="30sp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="test3"
+        android:text="Show Toast"
+        android:textAllCaps="false"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="test4"
+        android:text="Snack Bar"
+        android:textAllCaps="false"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="test5"
+        android:text="Dismiss SnackBar"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
